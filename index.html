@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- To Accept all Languages for the website-->
+    <meta charset="utf-8">
+    <!-- Start view and scale-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Author -->
+    <meta name="author" content="Ahmed Elbessfy">
+    <!-- Description-->
+    <meta name="Survey Form" content="a survey form as a project of the front end curriculum for FreeCodeCam">
+    <title>Survey Form</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
+    <!-- main style -->
+    <link rel="stylesheet" href="css/style.css">
+    <style></style>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</head>
+
+<body>
+    <main>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Your thoughts are important. Let's know about them.</p>
+        <form action="GET" id="survey-form">
+            <fieldset>
+                <legend>basic information</legend>
+                <div class="field">
+                    <label for="name" id="name-label"> Name :</label>
+                    <input type="text" id="name" placeholder="* Your Name " required>
+                </div>
+                <div class="field">
+                    <label for="email" id="email-label"> Email :</label>
+                    <input type="email" id="email" placeholder="* Your Email " required>
+                </div>
+                <div class="field">
+                    <label for="number" id="number-label"> Age :</label>
+                    <input type="number" id="number" placeholder="* Your Age " min="10" max="110">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>service information</legend>
+                <div class="field">
+                    <label for="dropdown">Select your pricing plan </label>
+                    <select name="services" id="dropdown">
+                        <option value="free"> Free </option>
+                        <option value="premium1"> 10$/mon. </option>
+                        <option value="premium2"> 30$/mon. </option>
+                        <option value="premium3"> 70$/mon. </option>
+                    </select>
+                </div>
+                <div class="field">
+                    <p>How did your here about us ? </p>
+                    <div class="options">
+                        <label for="friend">
+                            <input type="checkbox" name="affiliate" id="friend" value="friend">A friend recommendation
+                        </label>
+                        <label for="TV">
+                            <input type="checkbox" name="affiliate" id="TV" value="TVAds">A TV advertisements
+                        </label>
+                        <label for="online">
+                            <input type="checkbox" name="affiliate" id="online" value="onlineads">An Online advertisements
+                        </label>
+                    </div>
+                </div>
+                <div class="field">
+                    <p>How mush ares satisfied with our services ? </p>
+                    <div class="options">
+                        <label for="unsatisfied">
+                            <input type="radio" name="recommend" id="unsatisfied" value="unsatisfied">Unsatisfied</label>
+                        <label for="notSure">
+                            <input type="radio" name="recommend" id="notSure" value="notSure">Not Sure</label>
+                        <label for="satisfied">
+                            <input type="radio" name="recommend" id="satisfied" value="satisfied">Satisfied</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="moreinfo">How can we improve our service ? (Optional)
+                    </label>
+                    <textarea name="moreinfo" id="moreinfo" placeholder="Add improvement suggestions here ..."></textarea>
+                </div>
+            </fieldset>
+            <button id="submit">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>
